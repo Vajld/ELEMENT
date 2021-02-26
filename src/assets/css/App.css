@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+  box-sizing: border-box;
 }
 
 .topbar {
@@ -10,10 +12,11 @@
   height: 60px;
   width: 100%;
   z-index: 4;
+  background-color: aliceblue;
+
 }
 
-.name { 
-  font-family: 'Josefin Sans', sans-serif;
+.logo { 
   font-size: calc(20px + 1vw);
   display: flex;
   justify-content: center;
@@ -23,12 +26,5 @@
   cursor: default;
   font-weight: bold;
   margin-top: 15px;
-  
 }
 
-.photo1, .photo2 {
-  width: 100%;
-  max-width: 500px;
-  position: relative;
-}
-/*UDJI U MOBILE VERZIJU DESKTOP NIJE JOS DOBAR *POLJUBAC* */

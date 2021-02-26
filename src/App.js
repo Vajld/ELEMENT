@@ -1,11 +1,11 @@
 import React from 'react'
-import Header from './header'
-import TopBar from './TopBar'
+import Header from './components/Header'
+import TopBar from './components/TopBar'
 
 const App = () => {
   return (
     <div>
-      <TopBar/>
+      <TopBar />
       <Header />
     </div>
   )

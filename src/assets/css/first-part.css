@@ -1,0 +1,15 @@
+.photo1, .photo2 {
+    float: left;
+    width: 50%;
+}
+
+.header::after {
+    clear: both;
+    display: table;
+}
+
+@media screen and (max-width:770px) {
+    .photo1, .photo2 {
+        width: 100%;
+    }
+}
