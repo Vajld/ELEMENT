@@ -1,0 +1,100 @@
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(241, 241, 241);
+}
+
+.mainMenu {
+  display: flex;
+  list-style: none;
+}
+
+.mainMenu li a {
+  display: inline-block;
+  padding: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(19, 19, 19);
+  font-size: 1.5rem;
+}
+
+.mainMenu li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #000;
+  transition: width 0.3s;
+}
+
+.closeMenu,
+.icons {
+  font-size: 2rem;
+  display: none;
+}
+.faFacebookF:hover {
+  color: rgb(0, 110, 255);
+}
+.faInstagram:hover {
+  color: rgb(255, 0, 191);
+}
+
+.mainMenu li a:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+
+.openMenu {
+  font-size: 2rem;
+  margin: 20px;
+  display: none;
+}
+
+.closeMenu,
+.icons {
+  font-size: 2rem;
+  display: none;
+}
+
+.logo {
+  font-size: calc(25px + 1vw);
+  color: rgb(14, 14, 14);
+  text-shadow: 5px 5px rgb(231, 231, 231);
+  font-weight: bold;
+  padding: 20px;
+}
+
+@media (max-width: 820px) {
+  .mainMenu {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    transition: top 1s ease;
+    display: none;
+  }
+  .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  .openMenu {
+    display: block;
+  }
+  .mainMenu li a:hover {
+    background: none;
+    color: rgb(255, 123, 0);
+    font-size: 1.6rem;
+  }
+  .icons {
+    display: inline-block;
+    padding: 12px;
+  }
+}

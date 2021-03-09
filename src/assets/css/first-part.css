@@ -1,15 +1,18 @@
-.photo1, .photo2 {
-    float: left;
-    width: 50%;
+.image1,
+.image2 {
+  float: left;
+  width: 50%;
+  padding-top: 3vh;
 }
 
-.header::after {
-    clear: both;
-    display: table;
+.FirstPart::after {
+  clear: both;
+  display: table;
 }
 
-@media screen and (max-width:770px) {
-    .photo1, .photo2 {
-        width: 100%;
-    }
+@media screen and (max-width: 770px) {
+  .image1,
+  .image2 {
+    width: 100%;
+  }
 }
